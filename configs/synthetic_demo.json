@@ -1,0 +1,36 @@
+{
+  "input_cloud": "output/synthetic/synthetic_slope.xyz",
+  "output_dir": "output/synthetic/results",
+  "random_seed": 42,
+
+  "voxel_size_m": 0.0,
+  "max_points": 2000000,
+
+  "normal_k": 25,
+  "planarity_min": 0.20,
+  "surface_variation_max": 0.18,
+
+  "density_bandwidth_deg": 10.0,
+  "set_cone_deg": 18.0,
+  "merge_deg": 8.0,
+  "max_sets": 12,
+  "min_cluster_points": 400,
+
+  "patch_radius_m": 1.2,
+  "min_patch_points": 60,
+
+  "slope_dip_deg": 80.0,
+  "slope_dipdir_deg": 135.0,
+  "friction_angle_deg": 35.0,
+
+  "monte_carlo_runs": 20,
+  "monte_carlo_subsample": 12000,
+
+  "reference_sets": {
+    "manual": "data/reference_sets_manual.csv",
+    "qfacet_fm": "data/reference_sets_qfacet_fm.csv",
+    "qfacet_kd": "data/reference_sets_qfacet_kd.csv",
+    "dse": "data/reference_sets_dse.csv"
+  },
+  "observed_blocks_csv": "data/chilas_block_inventory.csv"
+}

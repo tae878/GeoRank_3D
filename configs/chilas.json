@@ -1,0 +1,39 @@
+{
+  "input_cloud": "",
+  "output_dir": "output/chilas",
+  "random_seed": 42,
+
+  "voxel_size_m": 0.05,
+  "max_points": 10000000,
+
+  "normal_k": 30,
+  "planarity_min": 0.20,
+  "surface_variation_max": 0.18,
+
+  "density_bandwidth_deg": 10.0,
+  "set_cone_deg": 22.0,
+  "merge_deg": 8.0,
+  "max_sets": 12,
+  "min_cluster_points": 300,
+
+  "patch_radius_m": 0.75,
+  "min_patch_points": 80,
+
+  "slope_dip_deg": 80.0,
+  "slope_dipdir_deg": 135.0,
+  "friction_angle_deg": 35.0,
+
+  "reliability_weights": [0.20, 0.25, 0.15, 0.20, 0.20],
+  "reliability_threshold": 0.50,
+  "persistence_source": "max_patch",
+
+  "monte_carlo_runs": 50,
+
+  "reference_sets": {
+    "manual": "data/reference_sets_manual.csv",
+    "qfacet_fm": "data/reference_sets_qfacet_fm.csv",
+    "qfacet_kd": "data/reference_sets_qfacet_kd.csv",
+    "dse": "data/reference_sets_dse.csv"
+  },
+  "observed_blocks_csv": "data/chilas_block_inventory.csv"
+}
